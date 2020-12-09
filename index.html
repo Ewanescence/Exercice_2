@@ -4,7 +4,11 @@
     <!-- En-tête de la page -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reservia - OpenClassrooms</title>
+    <script src="https://kit.fontawesome.com/ba7b302cfb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" media="all"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">  
 </head>
 <body>
     
@@ -23,14 +27,233 @@
     <main class="main">
 
         <!-- SEARCH -->
-        <section class="searchHeader">
-
+        <section class="search">
+            <header class="searchHeader">
+                <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+                <p>En plein centre-ville ou en pleine nature</p>
+            </header>
+            <form class="searchForm" action="proceedForm.html" method="GET">
+                <span class="searchFormWrapicon">
+                    <i class="fas fa-map-marker-alt searchFormWrapIcon"></i>
+                </span>
+                <input class="searchFormSearchinput" type="search" placeholder="Marseille, France">
+                <button class="searchFormSubmitinput">
+                    <span class="searchFormSubmitinputText">Rechercher</span> 
+                    <i class="searchFormSubmitinputIcon fas fa-search"></i>
+                </button>
+            </form>
+            <div class="searchFilters">
+                <h2 class="searchFiltersTitle">Filtres</h2>
+                <div class="searchFiltersFilter">
+                    <div class="searchFiltersWrapicon">
+                        <i class="fas fa-money-bill-wave searchFiltersFilterWrapiconIcon"></i>    
+                    </div>
+                    <span class="searchFiltersFilterTitle">Économique</span>
+                </div>
+                <div class="searchFiltersFilter">
+                    <div class="searchFiltersFilter">
+                        <i class="fas fa-child searchFiltersFilterWrapiconIcon"></i>
+                    </div>
+                    <span class="searchFiltersFilterTitle">Familial</span>
+                </div>
+                <div class="searchFiltersFilter">
+                    <div class="searchFiltersWrapicon">
+                        <i class="fas fa-heart searchFiltersFilterWrapiconIcon"></i>
+                    </div>
+                    <span class="searchFiltersFilterTitle">Romantique</span>
+                </div>
+                <div class="searchFiltersFilter">
+                    <div class="searchFiltersWrapicon">
+                        <i class="fas fa-dog searchFiltersFilterWrapiconIcon"></i>
+                    </div>
+                    <span class="searchFiltersFilterTitle">Animaux autorisés</span>
+                </div>
+            </div>
+            <div class="searchResult">
+                <div class="searchResultWrapicon">
+                    <i class="fas fa-info searchResultWrapiconIcon"></i>
+                </div>
+                <p class="searchResultText">Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
         </section>
         <!-- SEARCH-->
 
         <!-- HOSTING -->
         <section class="hosting" id="hosting">
-
+            <div class="hostingMain">
+                <header class="hostingMainHeader">
+                    <h2 class=hostingMainHeaderTitle>Hébergements à Marseille</h2>
+                </header>
+                <article class="hostingMainCard">
+                    <a href="#">
+                        <figure class="hostingMainCardFigure">
+                            <img class="hostingMainCardFigureImg" src="./img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Chambre avec un lit superposé et une fenêtre donnant vue sur la  ville.">
+                            <figcaption class="hostingMainCardFigureCaption">
+                                <h3 class="hostingMainCardFigureCaptionTitle">Auberge la Cannebière</h3>
+                            </figcaption>
+                        </figure>
+                        <p class="hostingMainCardDesc">Nuit à partir de <strong class="hostingMainCardDescPrice">25€</strong></p>
+                        <div class="hostingMainCardGrade">
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="false"></i>
+                        </div>
+                    </a>
+                </article>
+                <article class="hostingMainCard">
+                    <a href="#">
+                        <figure class="hostingMainCardFigure">
+                            <img class="hostingMainCardFigureImg" src="./img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Chambre grise avec deux lits simples et une fenêtre.">
+                            <figcaption class="hostingMainCardFigureCaption">
+                                <h3 class="hostingMainCardFigureCaptionTitle">Hôtel du port</h3>
+                            </figcaption>
+                        </figure>
+                        <p class="hostingMainCardDesc">Nuit à partir de <strong class="hostingMainCardDescPrice">52€</strong></p>
+                        <div class="hostingMainCardGrade">
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        </div>
+                    </a>
+                </article>
+                <article class="hostingMainCard">
+                    <a href="#">
+                        <figure class="hostingMainCardFigure">
+                            <img class="hostingMainCardFigureImg" src="./img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Chambre avec lit double, armoire et fenêtre.">
+                            <figcaption class="hostingMainCardFigureCaption">
+                                <h3 class="hostingMainCardFigureCaptionTitle">Hôtel Les mouettes</h3>
+                            </figcaption>
+                        </figure>
+                        <p class="hostingMainCardDesc">Nuit à partir de <strong class="hostingMainCardDescPrice">76€</strong></p>
+                        <div class="hostingMainCardGrade">
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="false"></i>
+                        </div>
+                    </a>
+                </article>
+                <article class="hostingMainCard">
+                    <a href="#">
+                        <figure class="hostingMainCardFigure">
+                            <img class="hostingMainCardFigureImg" src="./img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Chambre avec lit double sur les tons de mer.">
+                            <figcaption class="hostingMainCardFigureCaption">
+                                <h3 class="hostingMainCardFigureCaptionTitle">Hôtel de la mer</h3>
+                            </figcaption>
+                        </figure>
+                        <p class="hostingMainCardDesc">Nuit à partir de <strong class="hostingMainCardDescPrice">46€</strong></p>
+                        <div class="hostingMainCardGrade">
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="false"></i>
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="false"></i>
+                        </div>
+                    </a>
+                </article>
+                <article class="hostingMainCard">
+                    <a href="#">
+                        <figure class="hostingMainCardFigure">
+                            <img class="hostingMainCardFigureImg" src="./img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Chambre avec lits simples superposés.">
+                            <figcaption class="hostingMainCardFigureCaption">
+                                <h3 class="hostingMainCardFigureCaptionTitle">Auberge Le Panier</h3>
+                            </figcaption>
+                        </figure>
+                        <p class="hostingMainCardDesc">Nuit à partir de <strong class="hostingMainCardDescPrice">23€</strong></p>
+                        <div class="hostingMainCardGrade">
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="false"></i>
+                        </div>
+                    </a>
+                </article>
+                <article class="hostingMainCard">
+                    <a href="#">
+                        <figure class="hostingMainCardFigure">
+                            <img class="hostingMainCardFigureImg" src="./img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Chambre éclairée avec lit double et grande fenêtre.">
+                            <figcaption class="hostingMainCardFigureCaption">
+                                <h3 class="hostingMainCardFigureCaptionTitle">Hôtel chez Amina</h3>
+                            </figcaption>
+                        </figure>
+                        <p class="hostingMainCardDesc">Nuit à partir de <strong class="hostingMainCardDescPrice">96€</strong></p>
+                        <div class="hostingMainCardGrade">
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        </div>
+                    </a>
+                </article>
+                <a class="hostingMainViewmore" href="#">Afficher plus</a>
+            </div>
+            <aside class="hostingPopular">
+                <h2 class="hostingPopularTitle">Les plus populaires <i class="fas fa-chart-line"></i></h2>
+                <article class="hostingMainCard hostingPopularCard">
+                  <a class="hostingPopularWrapcontent" href="#">
+                      <div class="hostingPopularWrapcontentWrapimg">
+                          <img class="hostingPopularWrapcontentWrapimgImg" src="./img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Chambre lumineuse avec lit double.">
+                      </div>
+                      <div class="hostingPopularWrapcontentContent">
+                          <h3 class="hostingMainCardFigureCaptionTitle">Hôtel Le soleil du matin</h3>
+                          <p class="hostingMainCardDesc">Nuit à partir de <strong class="hostingMainCardDescPrice">128€</strong></p>
+                          <div class="hostingPopularWrapcontentContentWhitespace"></div>
+                          <div class="hostingMainCardGrade">
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                            <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                          </div>
+                      </div>
+                    </a>
+                </article>
+                <article class="hostingMainCard hostingPopularCard">
+                    <a class="hostingPopularWrapcontent" href="#">
+                        <div class="hostingPopularWrapcontentWrapimg">
+                            <img class="hostingPopularWrapcontentWrapimgImg" src="./img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre moderne avec lit double.">
+                        </div>
+                        <div class="hostingPopularWrapcontentContent">
+                            <h3 class="hostingMainCardFigureCaptionTitle">Au coeur de l'eau Chambres d'hôtes</h3>
+                            <p class="hostingMainCardDesc">Nuit à partir de <strong class="hostingMainCardDescPrice">71€</strong></p>
+                            <div class="hostingPopularWrapcontentContentWhitespace"></div>
+                            <div class="hostingMainCardGrade">
+                              <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                              <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                              <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                              <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                              <i class="fas fa-star hostingMainCardGradeIcon" data-active="false"></i>
+                            </div>
+                        </div>
+                      </a>
+                  </article>
+                  <article class="hostingMainCard hostingPopularCard">
+                    <a class="hostingPopularWrapcontent" href="#">
+                        <div class="hostingPopularWrapcontentWrapimg">
+                            <img class="hostingPopularWrapcontentWrapimgImg" src="./img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Chambre moderne avec lit double.">
+                        </div>
+                        <div class="hostingPopularWrapcontentContent">
+                            <h3 class="hostingMainCardFigureCaptionTitle">Hôtel Tout bleu et Blanc</h3>
+                            <p class="hostingMainCardDesc">Nuit à partir de <strong class="hostingMainCardDescPrice">68€</strong></p>
+                            <div class="hostingPopularWrapcontentContentWhitespace"></div>
+                            <div class="hostingMainCardGrade">
+                              <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                              <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                              <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                              <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                              <i class="fas fa-star hostingMainCardGradeIcon" data-active="false"></i>
+                            </div>
+                        </div>
+                      </a>
+                  </article>
+            </aside>
         </section>
         <!-- HOSTING -->
 
