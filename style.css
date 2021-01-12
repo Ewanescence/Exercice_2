@@ -42,7 +42,7 @@ ul {
         grid-area: navbar;
     }
 
-    .header ul li a {
+    .header li a {
         padding: 1.785rem;
         font-weight: 500;
         text-align: center;
@@ -50,12 +50,12 @@ ul {
         border-bottom: 3px transparent solid;
     }
 
-    .header ul li a:hover {
+    .header li a:hover {
         border-top: 3px solid #0065FC;
         color: #0065FC;
     }
 
-    .header ul li a[data-active="true"] {
+    .header li a[data-active="true"] {
         border-top: 3px solid #0065FC;
         color: #0065FC;
     }
@@ -158,7 +158,7 @@ ul {
         background-color: #f2f7ff;
     }
 
-    .searchFilters li i {
+    .searchFilters i {
         background-color: #DEEBFF;
         border-radius: 100%;
         height: 3rem;
@@ -215,7 +215,7 @@ ul {
                 grid-column: 1/-1;
             }
 
-            .hostingMain header h2 {
+            .hostingMain h2 {
                 margin: 0;
             }
 
