@@ -15,6 +15,7 @@ ul {
     list-style: none;
     display: inline-flex;
     padding: 0;
+    margin: 0;
 }
 
 /*------------------------------------*\
@@ -25,25 +26,30 @@ ul {
     grid-template-columns: auto 1fr auto auto;
     grid-template-areas: "logo . navbar button";
     display: grid;
-    align-items: center;
     max-width: 1440px;
-    margin: auto;
 }
 
     .header img {
         grid-area: logo;
-        padding: 0 2rem;
+        padding: 0 1rem;
         height: 2.813rem;
     }
 
     .header nav {
-        display: flex;
-        align-items: center;
         grid-area: navbar;
     }
 
+    .header ul {
+        margin: 1.2rem;
+    }
+
+    .header li {
+        padding: 0 1.2rem;
+    }
+    
+
     .header nav a {
-        padding: 1.785rem;
+        padding: 1rem;
         font-weight: 500;
         text-align: center;
         transition-duration: 0.1s;
@@ -62,12 +68,9 @@ ul {
 
 
     #headerSignup {
-        display: flex;
-        align-items: center;
         grid-area: button;
         color: #0065FC;
         font-weight: 600;
-        padding:  2rem;
     }
 
 /*------------------------------------*\
@@ -412,7 +415,6 @@ ul {
 }
 
 .footerWrapperColumn {
-    width: 30%;
     padding: 2rem 2rem;
 }
 
@@ -424,7 +426,7 @@ ul {
     margin: 1rem 0;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1201px) {
 
     .hosting {
         display: grid;
@@ -434,7 +436,39 @@ ul {
 
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
+
+
+    .header {
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: 
+            "logo . button"
+            "navbar navbar navbar";
+        position: relative;
+        margin-bottom: 2rem;
+    }
+
+    #headerSignup 
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1rem;
+    }
+
+        .header li {
+            border-bottom: 3px #f2f2f2 solid;
+            width: 50%;
+        }
+
+        .header li[data-active=true] {
+            border-bottom: 3px #0065FC solid;
+            border-top: none;
+        }
+
+        .header nav a:hover {
+            border-top: none;
+        }
 
 
     .searchFormButton {
@@ -448,7 +482,7 @@ ul {
     }
 
     .activity {
-        grid-template-rows: auto repeat(6, 12rem);
+        grid-template-rows: auto repeat(6, 20rem);
         row-gap: 2rem;
     }
 
@@ -492,8 +526,10 @@ ul {
     }
 }
 
-@media screen and (min-width: 601px) and (max-width:1024px)
+@media screen and (min-width: 801px) and (max-width:1200px)
 {
+
+    
     .hostingMain,
     .activity {
         grid-template-columns: 1fr 1fr;
@@ -539,7 +575,7 @@ ul {
         }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
 
     .main {
         padding: 0;
@@ -548,23 +584,6 @@ ul {
     .search {
         padding: 0 1rem;
     }
-
-    .header {
-        grid-template-columns: auto 1fr auto;
-        grid-template-areas: 
-            "logo . button"
-            "navbar navbar navbar";  
-    }
-
-        .header nav a {
-            border-bottom: 3px #f2f2f2 solid;
-            width: 50%;
-        }
-
-        .header nav a[data-active=true] {
-            border-bottom: 3px #0065FC solid;
-            border-top: none;
-        }
 
     .hosting {
         display: grid;
@@ -576,10 +595,14 @@ ul {
             background: none;
         }
 
+        .hostingMain img {
+            height: 14rem;
+        }
+
         .hostingPopular {
             grid-row: 1/2;
             border-radius: 0;
-            grid-template-rows: auto repeat(3, 9rem);
+            grid-template-rows: auto repeat(3, 12rem);
             grid-template-columns: 1fr;
         }
 
@@ -588,7 +611,7 @@ ul {
     }
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 801px) {
    
     .fa-search {
         display: none;
