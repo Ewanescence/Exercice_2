@@ -30,12 +30,12 @@ ul {
     margin: auto;
 }
 
-    .header img {
+   /* .header img  {
         grid-area: logo;
         height: 2.813rem;
         margin-left: 2rem;
         margin-top: 1rem;
-    }
+    }*/
 
     .header nav {
         grid-area: navbar;
